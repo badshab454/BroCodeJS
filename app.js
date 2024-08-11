@@ -1,13 +1,7 @@
+let username;
 
-var name = "Badsha Hossain";
-var age = 27;
-var isMarried = false;
-
-console.log(`${name} is ${age} years old.`);
-
-let students = 30;
-
-students = students + 5;
-
-console.log(students);
+document.getElementById("mySubmit").onclick = function() {
+    username = document.getElementById("myText").value;
+    document.getElementById("myH1").textContent = `Hello ${username}`
+}
 
